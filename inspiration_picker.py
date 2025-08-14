@@ -1,20 +1,21 @@
 import tkinter as tk
 import random
+import json
 
-inspirations=[
-             'No plan? Perfect. Do it freestyle.',
-             'Time is fake. You\'re not late.',
-             'Today\'s effort is tomorrow\'s strength',
-             'If something scares you, make it your curiosity project',
-             'To build something new, you must first break something old',
-             'Great victories come from brave decisions',
-             'Take three deep breaths',
-             'Look up at the sky for 20 seconds',
-             'Send someone a kind message',
-             'Trust your journey - it\'s uniquely yours']
+def load_quotes():
+    try:
+        with open('quotes.json', 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            return data['quotes']
+    except FileNotFoundError:
+        return ["Quote file not found. Please check quotes.json exists."]
+    except json.JSONDecodeError:
+        return ["Error reading quotes file. Please check JSON format."]
+    
+quotes = load_quotes()
 
 def get_inspirations():
-    selected=random.choice(inspirations)
+    selected=random.choice(quotes)
     inspirations_label.config(text=selected)
 
 window=tk.Tk()
