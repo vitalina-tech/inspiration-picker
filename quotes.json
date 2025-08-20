@@ -1,14 +1,48 @@
 {
   "quotes": [
-    "No plan? Perfect. Do it freestyle",
-    "Time is fake. You're not late",
-    "Today's effort is tomorrow's strength",
-    "If something scares you, make it your curiosity project",
-    "Trust your journey - it's uniquely yours",
-    "To build something new, you must first break something old",
-    "Great victories come from brave decisions",
-    "Take three deep breaths",
-    "Look up at the sky for 20 seconds",
-    "Send someone a kind message"
+    {
+      "text": "No plan? Perfect. Do it freestyle",
+      "source": "default"
+    },
+    {
+      "text": "Time is fake. You're not late",
+      "source": "default"
+    },
+    {
+      "text": "Today's effort is tomorrow's strength",
+      "source": "default"
+    },
+    {
+      "text": "If something scares you, make it your curiosity project",
+      "source": "default"
+    },
+    {
+      "text": "Trust your journey - it's uniquely yours",
+      "source": "default"
+    },
+    {
+      "text": "To build something new, you must first break something old",
+      "source": "default"
+    },
+    {
+      "text": "Great victories come from brave decisions",
+      "source": "default"
+    },
+    {
+      "text": "Take three deep breaths",
+      "source": "default"
+    },
+    {
+      "text": "Look up at the sky for 20 seconds",
+      "source": "default"
+    },
+    {
+      "text": "Send someone a kind message",
+      "source": "default"
+    },
+    {
+      "text": "Take the moment and make it perfect",
+      "source": "user"
+    }
   ]
 }
